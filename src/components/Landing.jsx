@@ -30,34 +30,42 @@ const Landing = ({ onStart }) => {
       </nav>
 
       <div className={styles.hero}>
-  <div className={styles.text}>
-    <h2>
-      Simplify Your Life with Our <br />
-      <strong>Todo App</strong>
-    </h2>
-    <p>
-      Stay organized and boost your productivity with our intuitive todo website.
-      Experience a modern approach to task management that fits your lifestyle.
-    </p>
+        <div className={styles.text}>
+          <h2>
+            Simplify Your Life with Our <br />
+            <strong>Todo App</strong>
+          </h2>
+          <p>
+            Stay organized and boost your productivity with our intuitive todo website.
+            Experience a modern approach to task management that fits your lifestyle.
+          </p>
 
-    <div className={styles.buttons}>
-      <button onClick={onStart}>Get Started</button>
-      <button className={styles.secondary}>Learn More</button>
-    </div>
+          <div className={styles.buttons}>
+            <button onClick={onStart}>Get Started</button>
+            <button className={styles.secondary}>Learn More</button>
+          </div>
 
-    <div className={styles.imageBox}>
-      <p>Your Tasks. Our Tools.</p>
-      <img src="/landing start photo.png" alt="Task Demo" />
-    </div>
+          <div className={styles.boxesWrapper}>
+            <div className={styles.imageBox}>
+              <p>Your Tasks. Our Tools.</p>
+              <img src="/landing start photo.png" alt="Task Demo" />
+            </div>
 
-    <div className={styles.brands}>
-      {['Google', 'Facebook', 'YouTube', 'Pinterest', 'Twitch'].map(brand => (
-        <span key={brand}>{brand}</span>
-      ))}
-    </div>
-  </div>
-</div>
+            <div className={styles.sideBox}>
+              <h3>Organize Achieve Relax</h3>
+              <p>Turn Clutter into clarity,chaos into control.</p>
+              <button className={styles.secondary}>Get Started Today</button>
+              <button className={styles.secondary}>Discover Feature</button>
+            </div>
+          </div>
 
+          <div className={styles.brands}>
+            {['Google', 'Facebook', 'YouTube', 'Pinterest', 'Twitch'].map((brand) => (
+              <span key={brand}>{brand}</span>
+            ))}
+          </div>
+        </div>
+      </div>
 
       <section className={styles.features}>
         <h3>Transform Your Productivity with Our <br />Innovative To-Do List Features</h3>
@@ -84,7 +92,7 @@ const Landing = ({ onStart }) => {
           <div className={styles.quoteBox}>
             <p>"Using this website has made my tasks so much easier! I can't imagine my day without it."</p>
             <div className={styles.author}>– Shreel Gosin, Project Manager, TechCorp</div>
-            <div className={styles.socialIcons}>❤️ 🔄 🔖</div>
+            <div className={styles.socialIcons}></div>
           </div>
           <div className={styles.testimonialImage}>
             <img src="/Testimonial.png" alt="Testimonial" />
