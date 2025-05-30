@@ -1,3 +1,4 @@
+/* Start of your CSS */
 .page {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #222;
@@ -39,44 +40,51 @@
   padding: 0.5rem 1rem;
   border-radius: 8px;
 }
-
-/* Hero Section */
+/* Hero Section Layout */
 .hero {
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4rem 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Text Section */
+.text {
+  max-width: 480px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 4rem 6rem;
+  gap: 1.5rem;
 }
 
 .text h2 {
   font-size: 2.5rem;
   line-height: 1.3;
-  align-items: center;
-}
-
-.text strong {
-  color: #ef4444;
+  margin-bottom: 0.5rem;
 }
 
 .text p {
-  margin-top: 1rem;
   font-size: 1rem;
   color: #555;
-  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 .buttons {
-  margin-top: 1.5rem;
   display: flex;
   gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .buttons button {
   padding: 0.7rem 1.5rem;
-  border-radius: 6px;
-  border: none;
+  border-radius: 25px;
   font-size: 0.95rem;
   cursor: pointer;
+  border: none;
 }
 
 .buttons button:first-child {
@@ -85,56 +93,106 @@
 }
 
 .secondary {
-  border: 1px solid #ccc;
+  border: 1px solid tomato;
   background-color: white;
+  color: #ef4444;
 }
 
-.brands {
-  margin-top: 2rem;
-  font-size: 0.85rem;
-  color: #888;
-  display: flex;
-  gap: 1rem;
-}
 
 .imageBox {
   position: relative;
   background-color: #ef4444;
   color: white;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 16px;
-  width: 320px;
-  height: 180px;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-}
-
-.imageBox img {
-  position: absolute;
-  bottom: -40px;
-  right: -20px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .imageBox p {
-  font-size: 0.95rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
+.imageBox img {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 1rem;
+}
+
+
 .playBtn {
-  position: absolute;
-  bottom: -20px;
-  right: 20px;
   background: white;
   color: #ef4444;
   border: none;
-  padding: 0.3rem 0.6rem;
+  padding: 0.5rem 1rem;
   border-radius: 50%;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
+
+/* Brand Logos */
+.brands {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  font-weight: 400;
+}
+
+.brands span {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Box Section on Right */
+.Box {
+  background-color: #fff;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  max-width: 320px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+.caption {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.avatar {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.userInfo {
+  margin-top: 0.5rem;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.role {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+
 
 /* Features Section */
 .features {
@@ -280,7 +338,6 @@
   padding: 60px 40px 20px;
   color: #111;
   font-family: 'Inter', sans-serif;
- 
 }
 
 .footerTop {
@@ -368,7 +425,6 @@
 
 /* Responsive styles */
 @media (max-width: 768px) {
-  /* Navbar */
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -381,7 +437,6 @@
     margin-top: 1rem;
   }
 
-  /* Hero Section */
   .hero {
     flex-direction: column;
     padding: 2rem 1rem;
@@ -416,7 +471,6 @@
     right: 10px;
   }
 
-  /* Features */
   .featureGrid {
     flex-direction: column;
     align-items: center;
@@ -427,7 +481,6 @@
     max-width: 300px;
   }
 
-  /* Testimonials */
   .testimonialContent {
     flex-direction: column;
     align-items: center;
@@ -438,7 +491,6 @@
     max-width: 280px;
   }
 
-  /* CTA */
   .cta {
     flex-direction: column;
     align-items: center;
@@ -459,7 +511,6 @@
     align-items: center;
   }
 
-  /* Footer */
   .footerTop {
     flex-direction: column;
     gap: 24px;
@@ -507,3 +558,4 @@
     width: 100%;
   }
 }
+
